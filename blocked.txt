@@ -1,0 +1,107 @@
+# --- SMART HOME TELEMETRY ---
+# Sonos
+msmetrics.ws.sonos.com
+jishi.sonos.com
+update-software.sonos.com
+
+# Amazon Alexa / Echo
+device-metrics-us.amazon.com
+device-metrics-us-2.amazon.com
+cal-video.amazon.com
+vsp-alexa-na.amazon.com
+vsp-alexa-eu.amazon.com
+
+# Ecobee
+experiment-runner.ecobee.com
+payload.ecobee.com
+t.ecobee.com
+
+# iRobot (Roomba)
+metrics.irobot.com
+axeda.com
+imgs.irobot.com
+
+# General IoT
+api.mixpanel.com
+
+# --- GOOGLE ADS & TRACKING (EXPLICIT) ---
+googleadservices.com
+www.googleadservices.com
+google-analytics.com
+ssl.google-analytics.com
+googletagservices.com
+googletagmanager.com
+ad.doubleclick.net
+googleads.g.doubleclick.net
+stats.g.doubleclick.net
+pagead2.googlesyndication.com
+tpc.googlesyndication.com
+ddm.google.com
+2mdn.net
+
+# --- REGEX BLACKLIST (Add these as Regex Filters) ---
+# These capture subdomains of tracking services more effectively
+# ^device-metrics.*\.amazon\.com$
+# ^metrics\.irobot\.com$
+# (\.|^)googleadservices\.com$
+# (\.|^)doubleclick\.net$
+# (\.|^)googlesyndication\.com$
+# (\.|^)google-analytics\.com$
+
+
+# --- Samsung TV (ACR & Ads) ---
+samsungacr.com
+config.samsungads.com
+gpm.samsungqbe.com
+log-config.samsungacr.com
+samsungcloudsolution.com
+# (Do not block samsung.com or apps won't download)
+
+# --- LG TV (WebOS Tracking) ---
+lgad.cjpowercast.com
+edgesuite.net
+smartshare.lgtvsdp.com
+us.info.lgsmartad.com
+
+# --- Roku (Logs & Ads) ---
+# Roku is very chatty. These block logs/ads but keep Netflix working.
+cooper.logs.roku.com
+giga.logs.roku.com
+track.sr.roku.com
+scribe.logs.roku.com
+# (Do not block api.roku.com or the phone remote stops working)
+
+# --- Fire TV / Nvidia Shield (Android TV Ads) ---
+device-metrics-us.amazon.com
+(You already have this in your Amazon list!)
+
+
+# --- Mobile App Analytics (The Big Ones) ---
+app-measurement.com
+firebase-settings.crashlytics.com
+reports.crashlytics.com
+mobile-service.adjust.com
+ads.unity3d.com
+gameads-admin.x.unity3d.com
+config.unityads.unity3d.com
+appsflyer.com
+branch.io
+
+# --- Windows 10/11 Telemetry ---
+v10.events.data.microsoft.com
+v20.events.data.microsoft.com
+watson.telemetry.microsoft.com
+telemetry.microsoft.com
+settings-win.data.microsoft.com
+
+
+# --- Apple Ads ---
+iad-content.apple.com
+iad.apple.com
+metrics.icloud.com
+securemetrics.apple.com
+
+
+# --- Block "Consensu" (Common Cookie Consent Platform) ---
+^cdn\.consensu\.org$
+^cmp\.quantcast\.com$
