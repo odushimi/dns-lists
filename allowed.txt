@@ -1,0 +1,97 @@
+# --- SMART DEVICES (FUNCTIONALITY) ---
+# Sonos
+sonos.com
+optimizely.com
+
+# Amazon / Blink
+api.amazon.com
+alexa.amazon.com
+softwareupdates.amazon.com
+prod.immedia-semi.com
+rest-prod.immedia-semi.com
+rest-u001.immedia-semi.com
+
+# Ecobee
+api.ecobee.com
+disconnect.ecobee.com
+
+# iRobot (Roomba)
+irobot.axeda.com
+irobot-homes-prod.s3.amazonaws.com
+
+# Microsoft Specific Fixes
+trafficmanager.net
+connect.facebook.net
+mmg.whatsapp.net
+pps.whatsapp.net
+
+# --- REGEX WHITELIST (CRITICAL) ---
+# You MUST add these as "Regex Filters" for these services to work 
+# if you are blocking broad categories.
+
+# -- Social Media (Facebook, WhatsApp, X, LinkedIn, Reddit) --
+(\.|^)facebook\.com$
+(\.|^)facebook\.net$
+(\.|^)fbcdn\.net$
+(\.|^)fbsbx\.com$
+(\.|^)messenger\.com$
+(\.|^)whatsapp\.com$
+(\.|^)whatsapp\.net$
+(\.|^)twitter\.com$
+(\.|^)twimg\.com$
+(\.|^)t\.co$
+(\.|^)x\.com$
+(\.|^)linkedin\.com$
+(\.|^)licdn\.com$
+(\.|^)reddit\.com$
+(\.|^)redditmedia\.com$
+(\.|^)redd\.it$
+
+# -- Microsoft (Teams, Outlook, Office) --
+(\.|^)microsoft\.com$
+(\.|^)microsoftonline\.com$
+(\.|^)live\.com$
+(\.|^)msauth\.net$
+(\.|^)office\.com$
+(\.|^)office365\.com$
+(\.|^)office\.net$
+(\.|^)outlook\.com$
+(\.|^)outlook\.office365\.com$
+(\.|^)teams\.microsoft\.com$
+(\.|^)skype\.com$
+(\.|^)skypeassets\.com$
+(\.|^)azureedge\.net$
+(\.|^)msecnd\.net$
+(\.|^)aspnetcdn\.com$
+
+# -- Google Minimalist (Infrastructure + Services + YouTube) --
+# Core Infra (Required for Login/Maps/Fonts)
+(\.|^)gstatic\.com$
+(\.|^)googleusercontent\.com$
+(\.|^)googleapis\.com$
+(\.|^)ggpht\.com$
+
+# Android/Hardware Updates
+(\.|^)android\.com$
+(\.|^)gvt1\.com$
+(\.|^)xn--ngstr-lra8j\.com$
+
+# YouTube (Video & Thumbs)
+(\.|^)youtube\.com$
+(\.|^)googlevideo\.com$
+(\.|^)ytimg\.com$
+
+# Specific Google Apps (Mail, Maps, Drive)
+^(www|accounts|mail|drive|docs|sheets|slides|maps|calendar|keep|photos|translate|meet)\.google\.com$
+
+
+# --- Apple Critical Infrastructure ---
+# OCSP checks the validity of security certificates. 
+# If blocked, apps hang for 3-5 seconds before opening.
+ocsp.apple.com
+ocsp2.apple.com
+
+# Software Updates
+mesu.apple.com
+gdmf.apple.com
+xp.apple.com
